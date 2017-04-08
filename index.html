@@ -1,68 +1,98 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-         <meta charset="utf-8">
-         <title>Popup page</title>
-            <style>
-            body {
-                text-align: center;
-            }
-            #popup
-                {
-                margin-top: 30px;
-                position: absolute;
-                font-size: 20px;
-                padding:1%;
-                }
-            #open_button { 
-                border-radius: 3px;
-                background: whitesmoke;
-                color: #666666;
-                border: none;
-                height: 2em;
-                width: 9em;
-                display:block;
-                
-                }
-            #close_button{
-                border-radius: 3px;
-                background: whitesmoke;
-                color: #666666;
-                border: none;
-                height: 2em;
-                width: 9em;
-                display: none;
-                }
-       
-            </style> 
-        </head>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Popup page</title>
+   <style>
+    body {
+        text-align: center;
+    }
+    #popup
+    {
+        margin-top: 30px;
+        position: relative;
+        font-size: 20px;
+        padding:1%;
+    }
+    #open_button { 
+        border-radius: 3px;
+        background: whitesmoke;
+        color: #666666;
+        border: none;
+        height: 2em;
+        width: 9em;
+        display:block;
 
-        <body>
-            <h1>It is Popup Window</h1>
-            <button id="open_button" name="submit" type="submit">Open</button>
-            <div id="popup"></div>
-            <button id="close_button" name="submit" type="submit">Close</button>
-            
+    }
+    #close_button{
+        border-radius: 3px;
+        background: whitesmoke;
+        color: #666666;
+        border: none;
+        height: 2em;
+        width: 9em;
+        display: none;
+    }
 
-            <script>
-            var button = document.getElementById("open_button");
-            var close_button = document.getElementById("close_button");
-            var openButtonClick = function(){
-                document.getElementById("close_button").style.display="block";
-                document.getElementById ("popup").textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor  reprehenderit  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-                document.getElementById("open_button").style.display="none";
-            }
 
-           var closeButtonClick = function (){
-               document.getElementById ("popup").textContent = "";
-               document.getElementById("close_button").style.display="none";
-               document.getElementById("open_button").style.display="block";
+</style> 
+</head>
 
-           }
-           
-           button.addEventListener("click", openButtonClick);   
-           close_button.addEventListener("click", closeButtonClick);
-            </script>
-            
-        </body>
-    </html>
+<body>
+    <h1>It is Popup Window</h1>
+
+
+    
+    <button id="open_button" name="submit" type="submit">Open</button>
+    <div id="popup"></div>
+    <button id="close_button" name="submit" type="submit">Close</button>
+
+
+    <script>
+        var button = document.getElementById("open_button");
+        var close_button = document.getElementById("close_button");
+        var openButtonClick = function(){
+            document.getElementById("close_button").style.display="block";
+            document.getElementById ("popup").textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor  reprehenderit  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+            document.getElementById("open_button").style.display="none";
+        }
+
+        var closeButtonClick = function (){
+         document.getElementById ("popup").textContent = "";
+         document.getElementById("close_button").style.display="none";
+         document.getElementById("open_button").style.display="block";
+
+     }
+
+     button.addEventListener("click", openButtonClick);   
+     close_button.addEventListener("click", closeButtonClick);
+ </script>
+
+ <p class="poem">
+    Реве та стогне Дніпр широкий, <br>
+    Сердитий вітер завива, <br>
+    Додолу верби гне високі, <br>
+    Горами хвилю підійма. <br>
+</p>
+<p class="poem">
+    І блідий місяць на ту пору <br>
+    Із хмари де-де виглядав, <br>
+    Неначе човен в синім морі, <br>
+    То виринав, то потопав. <br>
+</p>
+<p class="poem">
+    Ще треті півні не співали, <br>
+    Ніхто нігде не гомонів, <br>
+    Сичі в гаю перекликались, <br>
+    Та ясен раз у раз скрипів. <br>
+</p>
+<p class="poem">
+ Реве та стогне Дніпр широкий, <br>
+ Сердитий вітер завива, <br>
+ Додолу верби гне високі, <br>
+ Горами хвилю підійма.  <br>
+</p>
+
+
+</body>
+</html>
